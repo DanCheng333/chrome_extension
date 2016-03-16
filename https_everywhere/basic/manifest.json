@@ -1,0 +1,34 @@
+{
+
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    }, 
+    "browser_action": {
+        "default_icon": {
+            "38": "icon38.png"
+        }, 
+		"default_popup":"popup.html",
+        "default_title": "__MSG_about_ext_name__"
+    }, 
+    "description": "If http nowhere is selected, browser will not open a http webpage", 
+    "icons": {
+        "128": "icon128.png", 
+        "16": "icon16.png", 
+        "48": "icon48.png"
+    }, 
+    "incognito": "split", 
+    "manifest_version": 2, 
+    "minimum_chrome_version": "18", 
+    "name": "http nowhere", 
+    "permissions": [
+        "webRequest", 
+        "webRequestBlocking", 
+        "tabs", 
+        "cookies", 
+        "storage", 
+        "<all_urls>"
+    ], 
+    "version": "2015.6.28"
+}

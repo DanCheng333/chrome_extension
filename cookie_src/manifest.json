@@ -1,0 +1,25 @@
+{
+  "name" : "Delete Cookie",
+  "version" : "1",
+  "description" : "List all the cookies and user choose to delete，Ctrl+Shift+F shortcut",
+  "icons": { "16": "cookie.png",
+           "48": "cookie.png",
+          "128": "cookie.png" },
+  "permissions": [ "cookies", "browsingData","tabs", "http://*/*", "https://*/*"],
+  "browser_action": {
+    "default_icon": "cookie.png"
+  },
+  "commands": {
+	"_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "MacCtrl+Shift+F"
+      }
+    }
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "manifest_version": 2
+}

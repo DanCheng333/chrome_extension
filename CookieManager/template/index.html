@@ -1,0 +1,65 @@
+
+<html>
+<head>
+	<title>Cookie</title>
+	<style>
+	h1 {
+	  color:blue;
+	  font-size:700%;
+		}
+		
+	table {
+	  border-collapse:collapse;
+	}
+
+	td {
+	  border: 1px solid black;
+	  padding-left: 5px;
+	  font-size:150%;
+	}
+
+	td.button {
+	  border: none;
+	}
+
+	td.cookie_count {
+	  text-align: right;
+	  font-size:150%;
+	}
+</style>
+<script src="cookie.js"></script>
+</head>
+<body>
+
+<h1 style="font-size:590%">
+<img src="cookies.png" alt="cookies" style="float:left;width:180px;height:180px;">
+Your Cookies!</h1>
+
+Filter by domain: <input id="filter" type="text"><button id="domain_delete">Delete</button>
+<div role="main">
+    <form>
+      <label for="timefilter">Filter by time:</label>
+       <select id="timefilter">
+        <option value="hour">the past hour</option>
+        <option value="day">the past day</option>
+        <option value="week">the past week</option>
+        <option value="month">the past month</option>
+      </select>
+      <button id="time_delete">Delete</button>
+    </form>
+</div>
+<p>Showing <span id="cookie_count"></span> of <span id="domain_count"></span> cookie domains.</p>
+<button>Save</button>
+<div></div>
+<button id="remove_button">DELETE ALL!</button>
+ 
+<table id="cookies">
+  <tr class="header">
+    <th style="font-size:160%">Name</th>
+    <th style="font-size:160%">#Cookies</th>
+  </tr>
+  
+  
+</body>
+</html>
+

@@ -1,0 +1,5 @@
+{
+  "name" : "Cookie Manager",
+  "version" : "1",
+  "description" : "List all the cookies, user can search and delete cookies，Ctrl+Shift+F shortcut to open the browser action",
+}
